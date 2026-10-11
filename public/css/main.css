@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+
+html,
+body {
+    margin: 0;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+label,
+button {
+    border-radius: 0px !important;
+}
+
+#file-input:hover {
+    cursor: pointer;
+}
+
+/* Set to invisible by default */
+#inputs {
+    display: none;
+}
+
+#loading-data {
+    display: none;
+}

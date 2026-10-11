@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Skin Cancer Detection">
+    <meta name="author" content="Lokesh Palwai">
+    
+    <title>Skin Cancer Detection</title>
+
+    <!-- Icons -->
+    <link rel="icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <link rel="shortcut icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <link rel="apple-touch-icon" sizes="115x93" href="https://martinkondor.github.io/img/icon.bmp">
+    <!-- / Icons -->
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="public/css/libs/bootstrap-4.3.1.min.css">
+    <link href="public/css/main.css" rel="stylesheet">
+    <!-- / Styles -->
+
+</head>
+<body>
+<center><h1>Skin Cancer Prediction</h1></center>
+    <div class="container-fluid text-center mt-5">
+        <div id="prediction" class="h3 text-dark mt-3 mb-3 ml-3 mr-3"></div>
+        <br>
+    
+        <div id="inputs">
+            <label class="btn btn-outline-primary">
+                Upload an image for verification
+                <input id="file-input" accept="image/*" type="file" onchange="processInput(this)" hidden>
+            </label>
+        </div>
+        <br>
+
+        <div id="loading" class="text-center mt-3">
+            <div class="spinner-grow text-info" role="status"></div>
+            <span class="text-dark"> Loading the model ...</span>
+        </div>
+        
+        <div id="loading-data" class="text-center mt-3">
+            <div class="spinner-grow text-warning" role="status"></div>
+            <span class="text-dark"> Thinking ...</span>
+        </div>
+
+        <footer class="footer mt-5">
+    <p class="small">
+        Maintained by Lokesh Palwai
+    </p>
+</footer>
+    </div>
+
+    <!-- Scripts -->
+    <script src="public/js/libs/tf-1.0.0.min.js"></script>
+    <script src="public/js/main.js"></script>
+    <!-- / Scripts -->
+
+</body>
+</html>
